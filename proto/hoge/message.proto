@@ -1,0 +1,14 @@
+syntax = "proto3";
+package hoge;
+
+import "fuga/message.proto";
+
+message Hoge {
+  string id = 1;
+  string name = 2;
+  fuga.Fuga fuga = 3;
+}
+
+message GetHogeRequest {
+  string id = 1;
+}

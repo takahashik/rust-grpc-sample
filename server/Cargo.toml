@@ -1,0 +1,20 @@
+[package]
+name = "sample-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+log = "0.4.0"
+env_logger = "0.8.4"
+
+tonic = "0.6"
+prost = "0.9"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+
+getset = "0.1.2"
+
+[build-dependencies]
+tonic-build = "0.6"

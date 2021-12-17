@@ -1,0 +1,9 @@
+syntax = "proto3";
+package fuga;
+
+enum Fuga {
+  FUGA_UNSPECIFIED = 0;
+  FUGA_FOO = 1;
+  FUGA_BAR = 2;
+  FUGA_BAZ = 3;
+}

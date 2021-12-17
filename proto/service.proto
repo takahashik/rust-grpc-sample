@@ -1,0 +1,9 @@
+syntax = "proto3";
+package sample_service;
+
+import "google/protobuf/empty.proto";
+import "hoge/message.proto";
+
+service SampleService {
+  rpc GetHoge(hoge.GetHogeRequest) returns (hoge.Hoge) {}
+}
